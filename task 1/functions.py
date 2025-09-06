@@ -1,6 +1,5 @@
 import math
 def prod_non_zero_diag(x):
-    x = x.tolist()
     p = 1
     for i in range(len(x)):
         if i < len(x[i]):
@@ -17,7 +16,6 @@ def are_multisets_equal(x, y):
 
 
 def max_after_zero(x):
-    x = x.tolist()
     mx = 0
     for i in range(len(x) - 1): 
         if x[i] == 0:
@@ -38,7 +36,6 @@ def convert_image(img, coefs):
 
 
 def run_length_encoding(x):
-    x = x.tolist()
     values = [x[0]]
     counts = [1]
     for i in x:
