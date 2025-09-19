@@ -26,12 +26,13 @@ def max_after_zero(x):
 def convert_image(img, coefs):
     res = []
     for i in range(len(img)):
-        res.append([])
+        row = []
         for j in range(len(img[i])):
             color = 0
             for k in range(len(img[i][j])):
                 color += img[i][j][k] * coefs[k]
-            res.append(color)
+            row.append(color)
+        res.append(row)
     return res
 
 
